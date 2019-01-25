@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <title>Trang chủ</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="asset/favicon.ico">
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/custom.css">
+    <link rel="stylesheet" href="asset/css/all.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <!-- Logo/Brand -->
+                <a class="navbar-brand" href="/">
+                    <img src="https://getbootstrap.com/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30"
+                        class="d-inline-block align-top" alt="">
+                    Bootstrap
+                </a>
+
+                <!-- Nút chức năng của Mobile -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Thanh Menu -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/"><i class="fas fa-home"></i> Trang chủ</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"><i class="fas fa-tasks"></i> Đề bài</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"><i class="fas fa-clock"></i> Kỳ thi</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"><i class="fas fa-book-reader"></i> Thư viện</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link btn btn-warning" class="" href="#" data-toggle="modal" data-target="#exampleModal"><i
+                                    class="fas fa-sign-in-alt"></i>
+                                Đăng nhập</a>
+
+                            <!-- Modal của Đăng Nhập -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Đăng nhập hệ thống</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1"><i class="fas fa-user"></i> Tên
+                                                        đăng nhập</label>
+                                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                                        placeholder="Nhập tài khoản" aria-describedby="emailHelp">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1"><i class="fas fa-key"></i> Mật khẩu</label>
+                                                    <a href="signup_user.html" style="float:right">Quên mật khẩu ?</a>
+                                                    <input type="password" class="form-control" id="exampleInputEmail1"
+                                                        placeholder="Nhập mật khẩu" aria-describedby="emailHelp">
+                                                </div>
+
+                                                <div class="form-group form-check">
+                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">Ghi nhớ tài
+                                                        khoản</label>
+                                                </div>
+                                                <button type="submit" class="btn btn-success"><i class="fas fa-sign-in-alt"></i>
+                                                    Đăng nhập</button>
+                                                <button type="submit" class="btn btn-default" data-dismiss="modal"
+                                                    aria-label="Close"><i class="fas fa-times"></i> Đóng</button><br><br>
+                                                Chưa có tài khoản ?
+                                                <a href="signup_user.html"><i>Đăng ký ngay</i></a>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <!-- Banner -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <!-- Thay đổi banner -->
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="http://placehold.jp/400x100.png" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="http://placehold.jp/400x100.png" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="http://placehold.jp/400x100.png" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Trước đó</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Kế tiếp</span>
+                </a>
+            </div>
+
+            <!-- Thông báo mới -->
+            <div class="row" style="margin-top:20px">
+                <div class="col-md-9">
+                    <!-- Thông báo -->
+                    <div class="card mb-4 text-justify">
+                        <div class="card-body">
+                            <h2 class="card-title">Bài toán đeo vòng</h2>
+                            <p class="post-date"><a href="#"><i class="far fa-user"></i> bomvaxetang </a><i class="far fa-clock"></i>
+                                14:25 <i class="far fa-calendar"></i> 17/01/2019</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+                                aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis
+                                animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+                            <a href="post_detail.html" class="btn btn-primary">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Thông báo -->
+                    <div class="card mb-4 text-justify">
+                        <div class="card-body">
+                            <h2 class="card-title">Bài toán tháp Hà Nội</h2>
+                            <p class="post-date"><a href="#"><i class="far fa-user"></i> bomvaxetang </a><i class="far fa-clock"></i>
+                                14:25 <i class="far fa-calendar"></i> 17/01/2019</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+                                aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis
+                                animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+                            <a href="post_detail.html" class="btn btn-primary">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Thông báo -->
+                    <div class="card mb-4 text-justify">
+                        <div class="card-body">
+                            <h2 class="card-title">Bài toán tháp Hà Nội</h2>
+                            <p class="post-date"><a href="#"><i class="far fa-user"></i> bomvaxetang </a><i class="far fa-clock"></i>
+                                14:25 <i class="far fa-calendar"></i> 17/01/2019</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+                                aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis
+                                animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+                            <a href="#" class="btn btn-primary">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Thông báo -->
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="card-title">Bài toán tháp Hà Nội</h2>
+                            <p class="post-date"><a href="#"><i class="far fa-user"></i> bomvaxetang </a><i class="far fa-clock"></i>
+                                14:25 <i class="far fa-calendar"></i> 17/01/2019</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+                                aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis
+                                animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+                            <a href="#" class="btn btn-primary">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <!-- Kỳ thi sắp diễn ra -->
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header bg-primary text-light">
+                            <i class="fas fa-calendar-alt"></i> Kỳ thi sắp diễn ra
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><i>Chưa có cuộc thi nào</i></li>
+                        </ul>
+                    </div>
+                    <!-- Bảng xếp hạng -->
+                    <div>
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                    aria-controls="home" aria-selected="true">Xếp hạng</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                    aria-controls="profile" aria-selected="false">Đóng góp</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Tài khoản</th>
+                                            <th scope="col">Điểm</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td><span class="username-highlight">BomVaXeTang</span></td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td><span class="username-highlight">Wind.D</span></td>
+                                            <td>8</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td><span class="username-highlight">Rushki113</span></td>
+                                            <td>5</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">Tài khoản</th>
+                                                    <th scope="col">Điểm</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td><span class="username-highlight">LuckyLuke</span></td>
+                                                    <td>10</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td><span class="username-highlight">PewPew</span></td>
+                                                    <td>8</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td><span class="username-highlight">CykaBlyat</span></td>
+                                                    <td>5</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phân trang -->
+            <nav aria-label="Page navigation example">
+                <ul class="pagination d-flex justify-content-start">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Trang trước</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Trang kế</a>
+                    </li>
+                </ul>
+            </nav>
+    </main>
+    <hr>
+    <footer align=" center">
+        <p>© 2018 Developed by <a href="#">BVXT</a></p>
+        <p>All Rights Reserved</p>
+    </footer>
+    <script src="asset/js/jquery-3.3.1.min.js"> </script>
+    <script src="asset/js/popper.min.js"> </script>
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/custom.js"> </script>
+</body>
+
+</html>
