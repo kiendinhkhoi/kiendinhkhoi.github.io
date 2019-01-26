@@ -60,6 +60,22 @@ body {
     cursor:default;
 }
 
+main{
+    margin-top:20px;
+}
+
+tr{
+    cursor: pointer;
+}
+
+.main-table{
+    padding: 10px 10px 10px 10px
+}
+
+#accordion .card{
+    margin-bottom: 5px;
+}
+
 #breadcrumb{
     margin-top:20px;
 }
