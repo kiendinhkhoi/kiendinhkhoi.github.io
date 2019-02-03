@@ -42,62 +42,12 @@
     background-color: #d9534f;
     border-color: #d43f3a;
 }
-.bg-success{
-    background-color: #7bed9f;
-}
-.bg-primary{
-    background-color: #70a1ff;
-}
-.bg-danger{
-    background-color: #ff6348;
-}
-.bg-warning{
-    background-color: #ffa502;
-}
 /* Overide Bootstrap */
 body {
     font-family: "Noto Sans", sans-serif;
     cursor:default;
 }
 
-main{
-    margin-top:20px;
-}
-
-tr{
-    cursor: pointer;
-}
-
-.main-table{
-    padding: 10px 10px 10px 10px
-}
-
-#accordion .card{
-    margin-bottom: 5px;
-}
-
-#breadcrumb{
-    margin-top:20px;
-}
-
-#navbarSupportedContent ul li{
-    margin-left: 20px;
-}
-
-#exampleModal{
-    margin-top:10%;
-}
-#regisForm{
-    margin-top:10%;
-}
-.post-date{
-    font-size: 13px;
-}
-
-.username-highlight
-{
-    color:#DB3236;
-}
 img{
     pointer-events: none;
 }
