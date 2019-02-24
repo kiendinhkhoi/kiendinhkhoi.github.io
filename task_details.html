@@ -48,16 +48,16 @@
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link btn btn-warning" class="" href="#" data-toggle="modal"
-                                data-target="#exampleModal"><i class="fas fa-sign-in-alt"></i>
+                                data-target="#loginModal"><i class="fas fa-sign-in-alt"></i>
                                 Đăng nhập</a>
 
                             <!-- Modal của Đăng Nhập -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="loginModal" tabindex="-1" role="dialog"
+                                aria-labelledby="loginModalLabel" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Đăng nhập hệ thống</h5>
+                                            <h5 class="modal-title" id="loginModalLabel">Đăng nhập hệ thống</h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
@@ -104,106 +104,127 @@
     </header>
     <main>
         <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Đề bài</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">CTAIN</li>
+                </ol>
+            </nav>
             <div class="row">
-                <div class="col-md-3">
-                    <div class="card main-table">
-                        <div class="card-body">
-                            <h5 class="card-title">Phân loại</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Các loại bài toán đang có</h6>
-                        </div>
-                        <div id="accordion">
-                            <div class="card">
-                                <a class="card-link text-dark" data-toggle="collapse" href="#collapseOne">
-                                    <div class="card-header">
-                                        Thuật toán tìm kiếm <span class="float-right"><i
-                                                class="fas fa-caret-down"></i></span>
-                                    </div>
-                                </a>
-                                <div id="collapseOne" class="collapse" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <ul>
-                                            <li><a href="#">Interchange Sort</a></li>
-                                            <li><a href="#">Quick Sort</a></li>
-                                            <li><a href="#">Bubble Sort</a></li>
-                                            <li><a href="#">Interpolation</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <a class="collapsed card-link text-dark" data-toggle="collapse" href="#collapseTwo">
-                                    <div class="card-header">
-                                        Cấu trúc dữ liệu <span class="float-right"><i
-                                                class="fas fa-caret-down"></i></span>
-                                    </div>
-                                </a>
-                                <div id="collapseTwo" class="collapse" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <ul>
-                                            <li><a href="#">Heap</a></li>
-                                            <li><a href="#">Mảng cộng dồn</a></li>
-                                            <li><a href="#">Binary Indexed Tree</a></li>
-                                            <li><a href="#">Heavy Light Decomposition</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <a class="collapsed card-link text-dark" data-toggle="collapse" href="#collapseThree">
-                                    <div class="card-header">
-                                        Lý thuyết đồ thị <span class="float-right"><i
-                                                class="fas fa-caret-down"></i></span>
-                                    </div>
-                                </a>
-                                <div id="collapseThree" class="collapse" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <ul>
-                                            <li><a href="#">DFS/BFS</a></li>
-                                            <li><a href="#">Chu trình Euler</a></li>
-                                            <li><a href="#">Đường đi ngắn nhất</a></li>
-                                            <li><a href="#">Disjoint set</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-md-10">
+                    <h2 class="prob-name">CTAIN - Containers</h2>
+                    <strong>Giới hạn</strong>
+                    <ul>
+                        <li class="prob-info">
+                            <strong>Thời gian:</strong>
+                            <span class="prob-detail-info">5.0s</span>
+                        </li>
+                        <li class="prob-info">
+                            <strong>Bộ nhớ:</strong>
+                            <span class="prob-detail-info">1536MB</span>
+                        </li>
+                        <li class="prob-info">
+                            <strong>Mã nguồn:</strong>
+                            <span class="prob-detail-info">50000 bytes</span>
+                        </li>
+                    </ul>
+                    <p></p>
+                    <p>Cho n bình chứa nước (1 &lt;= n &lt;= 4). Ban đầu, mỗi bình đều chứa đầy nước. Bình i có dung
+                        lượng là&nbsp;<em>o</em><sub><em>i</em></sub><em>, với 1
+                            &lt;=&nbsp;o</em><sub><em>i</em></sub><em>&nbsp;&lt;= 49.</em></p>
+                    <p>Bạn có thể thực hiện 1 trong 3 thao tác sau:</p>
+                    <ol>
+                        <li>Đổ tất cả nước ở trong bình A sang bình B. Thao tác này chỉ được thực hiện nếu bình
+                            B&nbsp;có đủ chỗ trống.</li>
+                        <li>Lấy 1 lượng nước ở bình A và đổ đầy hoàn toàn bình B.</li>
+                        <li>Đổ tất cả nước mà 1 bình đang chứa.</li>
+                    </ol>
+                    <p><strong>Yêu cầu:&nbsp;</strong></p>
+                    <ul>
+                        <li>Cho 1 dãy w<sub>i</sub>. Hỏi có tồn tại 1 dãy thao tác đổ nước để từ trạng thái ban đầu
+                            (mỗi bình chứa đầy nước), ta đến được trạng thái mà bình i
+                            chứa&nbsp;w<sub>i</sub>&nbsp;nước.</li>
+                        <li>Nếu tồn tại dãy thao tác đổ nước, tìm số lượng thao tác ít nhất.</li>
+                    </ul>
+                    <p><strong>Input</strong></p>
+                    <p>Dòng đầu: số lượng test T (T &lt;= 20).</p>
+                    <p>Mỗi test gồm:</p>
+                    <ul>
+                        <li>1 dòng trống</li>
+                        <li>1 dòng chứa số nguyên dương&nbsp;n (n &lt;= 4).</li>
+                        <li>1 dòng chứa n số&nbsp;<em>o</em><sub><em>i</em></sub><em>, với 1
+                                &lt;=&nbsp;o</em><sub><em>i</em></sub><em>&nbsp;&lt;= 49.</em></li>
+                        <li>1 dòng chứa n số w<sub><em>i</em></sub><em>, với 1 &lt;=
+                                w</em><sub><em>i</em></sub><em>&nbsp;&lt;= o<sub>i</sub>.</em></li>
+                    </ul>
+                    <p><strong>Output</strong></p>
+                    <p>Nếu tồn tại 1 dãy thao tác, in ra số thao tác ít nhất, ngược lại in ra NO.</p>
+                    <p><strong>Ví dụ</strong></p>
+                    <pre>Input:
+                          2
+                          
+                          3
+                          3 5 5
+                          0 0 4
+                          
+                          2
+                          20 25
+                          10 16
+                          
+     Output:
+                          6
+                          NO
+                          </pre>
+                    <p></p>
+                    <hr>
+                    <ul>
+                        <li class="prob-info">
+                            <strong>Người up:</strong>
+                            <span class="prob-detail-info">thanhvy</span>
+                        </li>
+
+                        <li class="prob-info">
+                            <strong>Nguồn bài:</strong>
+                            <span class="prob-detail-info">3rd Polish Olympiad in Informatics, stage 1</span>
+                        </li>
+
+                    </ul>
                 </div>
-                <div class="col-md-9">
-                    <div class="card main-table">
-                        <table id="example" class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th>Mã bài</th>
-                                    <th>Tên bài</th>
-                                    <th>Code mẫu</th>
-                                    <th>Điểm</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class='clickable-row' data-href='task_details.html'>
-
-                                    <td>SX1</td>
-                                    <td class="text-primary">CTAIN - Containers</td>
-                                    <td><i class="far fa-check-square fa-2x text-success"></i></td>
-                                    <td class="text-danger"><b>0.65</b></td>
-                                </tr>
-                                <tr class='clickable-row' data-href='task_details.html'>
-
-                                    <td>SX2</td>
-                                    <td class="text-primary">Đếm lá</td>
-                                    <td><i class="far fa-check-square fa-2x text-success"></i></td>
-                                    <td class="text-danger"><b>0.74</b></td>
-                                </tr>
-                                <tr class='clickable-row' data-href='task_details.html'>
-
-                                    <td>SX3</td>
-                                    <td class="text-primary">Đeo vòng tay</td>
-                                    <td><i class="far fa-check-square fa-2x text-success"></i></td>
-                                    <td class="text-danger"><b>0.90</b></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                <div class="col-md-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <a class="btn btn-lg btn-success text-light" data-toggle="modal"
+                                data-target="#uploadModal"><i class="fas fa-file-upload"></i> Nộp bài</a>
+                            <!-- Modal của Đăng Nhập -->
+                            <div class="modal fade" id="uploadModal" tabindex="-1" role="dialog"
+                                aria-labelledby="uploadModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="uploadModalLabel">Nộp bài</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1"><i class="far fa-file-code"></i>
+                                                        Chọn file từ máy tính của bạn</label>
+                                                    <input type="file" class="btn btn-default" name="code_file">
+                                                </div>
+                                                <button type="submit" class="btn btn-success"><i
+                                                        class="fas fa-upload"></i>
+                                                    Nộp bài</button>
+                                                <button type="submit" class="btn btn-default" data-dismiss="modal"
+                                                    aria-label="Close"><i class="fas fa-times"></i>
+                                                    Đóng</button><br><br>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

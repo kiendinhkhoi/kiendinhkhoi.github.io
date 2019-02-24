@@ -84,9 +84,10 @@ tr{
     margin-left: 20px;
 }
 
-#exampleModal{
+.modal{
     margin-top:10%;
 }
+
 #regisForm{
     margin-top:10%;
 }
