@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <title>Trang chủ</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="asset/favicon.ico">
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/custom.css">
+    <link rel="stylesheet" href="asset/css/all.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <!-- Logo/Brand -->
+                <a class="navbar-brand" href="/">
+                    <img src="http://dodong.vn/wp-content/uploads/2014/04/quochuydangcsvn.png" width="30" height="30"
+                        class="d-inline-block align-top" alt="">
+                    Triết học Mác - Lênin
+                </a>
+
+                <!-- Nút chức năng của Mobile -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Thanh Menu -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"><i class="fas fa-home"></i> Trang chủ</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="task.html"><i class="fas fa-tasks"></i> Đề bài</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"><i class="fas fa-clock"></i> Kỳ thi</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"><i class="fas fa-book-reader"></i> Thư viện</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link btn btn-warning" class="" href="#" data-toggle="modal"
+                                data-target="#loginModal"><i class="fas fa-sign-in-alt"></i>
+                                Đăng nhập</a>
+
+                            <!-- Modal của Đăng Nhập -->
+                            <div class="modal fade" id="loginModal" tabindex="-1" role="dialog"
+                                aria-labelledby="loginModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="loginModalLabel">Đăng nhập hệ thống</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1"><i class="fas fa-user"></i> Tên
+                                                        đăng nhập</label>
+                                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                                        placeholder="Nhập tài khoản" aria-describedby="emailHelp">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1"><i class="fas fa-key"></i> Mật
+                                                        khẩu</label>
+                                                    <a href="signup_user.html" style="float:right">Quên mật khẩu ?</a>
+                                                    <input type="password" class="form-control" id="exampleInputEmail1"
+                                                        placeholder="Nhập mật khẩu" aria-describedby="emailHelp">
+                                                </div>
+
+                                                <div class="form-group form-check">
+                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">Ghi nhớ tài
+                                                        khoản</label>
+                                                </div>
+                                                <button type="submit" class="btn btn-success"><i
+                                                        class="fas fa-sign-in-alt"></i>
+                                                    Đăng nhập</button>
+                                                <button type="submit" class="btn btn-default" data-dismiss="modal"
+                                                    aria-label="Close"><i class="fas fa-times"></i>
+                                                    Đóng</button><br><br>
+                                                Chưa có tài khoản ?
+                                                <a href="signup_user.html"><i>Đăng ký ngay</i></a>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">Câu hỏi</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Trả lời</li>
+                </ol>
+            </nav>
+            <div class="row">
+                <!-- Trả lời -->
+                <div class="col-md-12">
+                    <h3 class="prob-name">Những vấn đề cơ bản của triết học ?</h3>
+                    <p><strong>Trả lời:</strong></p>
+                    <p>Triết học là hệ thống những quan điểm lý luận chung nhất về thế giới.</p>
+                    <p>Vấn đề cơ bản của triết học là mối quan hệ giữa tư duy và tội hay nói cách khác là giữa vật chất và ý thức.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <hr>
+    <footer align=" center">
+        <p>© 2018 Developed by <a href="https://www.facebook.com/kiendinhkhoi">Kiến Đình Khôi</a></p>
+        <p>All Rights Reserved</p>
+    </footer>
+    <script src="asset/js/jquery-3.3.1.min.js">
+    </script>
+    <script src="asset/js/popper.min.js">
+    </script>
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/custom.js">
+    </script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Gán link cho tr của table
+            $(".clickable-row").click(function () {
+                window.location = $(this).data("href");
+            });
+            // Việt hóa datatable
+            $('#example').DataTable({
+                "language": {
+                    "sProcessing": "Chờ chút xíu...",
+                    "sLengthMenu": "Xem _MENU_ mục",
+                    "sZeroRecords": "Không tìm thấy bài có tên tương ứng...",
+                    "sInfo": "Đang xem _START_ đến _END_ trong tổng số _TOTAL_ bài",
+                    "sInfoEmpty": "Đang xem 0 đến 0 trong tổng số 0 bài",
+                    "sInfoFiltered": "(được lọc từ _MAX_ mục)",
+                    "sInfoPostFix": "",
+                    "sSearch": "Tìm:",
+                    "sUrl": "",
+                    "oPaginate": {
+                        "sFirst": "Trang đầu",
+                        "sPrevious": "Trang trước",
+                        "sNext": "Trang kế",
+                        "sLast": "Trang cuối"
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
