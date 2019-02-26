@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="asset/css/bootstrap.min.css">
     <link rel="stylesheet" href="asset/css/custom.css">
     <link rel="stylesheet" href="asset/css/all.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
-
 </head>
 
 <body>
@@ -19,9 +17,9 @@
             <div class="container">
                 <!-- Logo/Brand -->
                 <a class="navbar-brand" href="/">
-                    <img src="http://dodong.vn/wp-content/uploads/2014/04/quochuydangcsvn.png" width="30" height="30"
+                    <img src="https://getbootstrap.com/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30"
                         class="d-inline-block align-top" alt="">
-                    Triết học Mác - Lênin
+                    Bootstrap
                 </a>
 
                 <!-- Nút chức năng của Mobile -->
@@ -35,7 +33,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#"><i class="fas fa-home"></i> Trang chủ</span></a>
+                            <a class="nav-link" href="/"><i class="fas fa-home"></i> Trang chủ</span></a>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link" href="task.html"><i class="fas fa-tasks"></i> Đề bài</span></a>
@@ -48,16 +46,16 @@
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link btn btn-warning" class="" href="#" data-toggle="modal"
-                                data-target="#loginModal"><i class="fas fa-sign-in-alt"></i>
+                                data-target="#exampleModal"><i class="fas fa-sign-in-alt"></i>
                                 Đăng nhập</a>
 
                             <!-- Modal của Đăng Nhập -->
-                            <div class="modal fade" id="loginModal" tabindex="-1" role="dialog"
-                                aria-labelledby="loginModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="loginModalLabel">Đăng nhập hệ thống</h5>
+                                            <h5 class="modal-title" id="exampleModalLabel">Đăng nhập hệ thống</h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
@@ -104,66 +102,83 @@
     </header>
     <main>
         <div class="container">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="/">Câu hỏi</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Trả lời</li>
-                </ol>
-            </nav>
+
             <div class="row">
-                <!-- Trả lời -->
-                <div class="col-md-12">
-                    <h3 class="prob-name">Sự khác nhau giữa chủ nghĩa duy vật và chủ nghĩa duy tâm ?</h3>
-                    <p><strong>Trả lời:</strong></p>
-                    <p><b>Chủ nghĩa duy vật:</b> Vật chất có trước, vật chất quyết định ý thức, vật chất là tính thứ nhất, ý thức là tính thứ hai.</p>
-                    <p><b>Chủ nghĩa duy tâm:</b> Ý thức có trước, ý thức quyết định vật chất, ý thức là tính thứ nhất, vật chất là tính thứ hai.</p>
+
+                <div class="col-lg-8 text-justify">
+
+                    <!-- Tiêu đề -->
+                    <h1 class="mt-4">Cuộc thi tìm kiếm tài năng trẻ</h1>
+
+                    <!-- Tác giả -->
+                    <p class="post-date"><a href="#"><i class="far fa-user"></i> bomvaxetang </a><i
+                            class="far fa-clock"></i>
+                        14:25 <i class="far fa-calendar"></i> 17/01/2019</p>
+                    <hr>
+
+                    <!-- Ảnh cover -->
+                    <img class="img-fluid rounded" src="http://placehold.it/900x300" alt="">
+
+                    <hr>
+
+                    <!-- Nội dung bài viết -->
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati,
+                        aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos
+                        magni recusandae laborum minus inventore?</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum
+                        quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat.
+                        Temporibus, voluptatibus.</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto
+                        blanditiis unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione
+                        repellat perspiciatis. Enim, iure!</p>
+
+                    <blockquote class="blockquote">
+                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
+                            ante.</p>
+                        <footer class="blockquote-footer">Someone famous in
+                            <cite title="Source Title">Source Title</cite>
+                        </footer>
+                    </blockquote>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut
+                        quas placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo
+                        voluptatem obcaecati?</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut,
+                        explicabo, aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe
+                        quaerat numquam recusandae? Qui, necessitatibus, est!</p>
+
+                    <a href="/"><i class="fa fa-arrow-left"></i> Xem bài viết khác</a>
+
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card my-4">
+                        <h5 class="card-header bg-danger text-light">Những điều cần lưu ý</h5>
+                        <div class="card-body">
+                            <ul class="text-danger">
+                                <li>Lorem lipsum</li>
+                                <li>Dolor sit amet</li>
+                                <li>consectetur adipisicing elit</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <a href="/"><i class="fa fa-arrow-left"></i> Xem câu khác</a>
+
         </div>
     </main>
     <hr>
     <footer align=" center">
-        <p>© 2018 Developed by <a href="https://www.facebook.com/kiendinhkhoi">Kiến Đình Khôi</a></p>
+        <p>© 2018 Developed by <a href="#">BVXT</a></p>
         <p>All Rights Reserved</p>
     </footer>
-    <script src="asset/js/jquery-3.3.1.min.js">
-    </script>
-    <script src="asset/js/popper.min.js">
-    </script>
+    <script src="asset/js/jquery-3.3.1.min.js"> </script>
+    <script src="asset/js/popper.min.js"> </script>
     <script src="asset/js/bootstrap.min.js"></script>
-    <script src="asset/js/custom.js">
-    </script>
-    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            // Gán link cho tr của table
-            $(".clickable-row").click(function () {
-                window.location = $(this).data("href");
-            });
-            // Việt hóa datatable
-            $('#example').DataTable({
-                "language": {
-                    "sProcessing": "Chờ chút xíu...",
-                    "sLengthMenu": "Xem _MENU_ mục",
-                    "sZeroRecords": "Không tìm thấy bài có tên tương ứng...",
-                    "sInfo": "Đang xem _START_ đến _END_ trong tổng số _TOTAL_ bài",
-                    "sInfoEmpty": "Đang xem 0 đến 0 trong tổng số 0 bài",
-                    "sInfoFiltered": "(được lọc từ _MAX_ mục)",
-                    "sInfoPostFix": "",
-                    "sSearch": "Tìm:",
-                    "sUrl": "",
-                    "oPaginate": {
-                        "sFirst": "Trang đầu",
-                        "sPrevious": "Trang trước",
-                        "sNext": "Trang kế",
-                        "sLast": "Trang cuối"
-                    }
-                }
-            });
-        });
-    </script>
+    <script src="asset/js/custom.js"> </script>
 </body>
 
 </html>
