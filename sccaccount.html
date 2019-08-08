@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 </head>
+
 <body id="page-top">
     <div id="wrapper">
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
@@ -31,6 +33,16 @@
                 Cuộc sống
             </div>
             <li class="nav-item">
+                <a class="nav-link" href="music.html">
+                    <i class="fas fa-music"></i>
+                    <span>Nghe nhạc</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="moneyexchange.html">
+                    <i class="fas fa-funnel-dollar"></i>
+                    <span>Chuyển đổi ngoại tệ</span></a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="calculator.html">
                     <i class="fas fa-fw fa-calculator"></i>
                     <span>Tính tiền về Huế</span></a>
@@ -43,6 +55,11 @@
                 <a class="nav-link" href="tables.html">
                     <i class="fas fa-fw fa-code"></i>
                     <span>Code Snippet</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="textholder.html">
+                    <i class="far fa-edit"></i>
+                    <span>Lưu tạm văn bản</span></a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="sccaccount.html">
@@ -233,7 +250,8 @@
                 </nav>
                 <div class="container-fluid">
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">SCC Vietnam - We mame IT Work !</h1>
+                        <h1 class="h3 mb-0 text-gray-800"><i class="far fa-building"></i> SCC Vietnam - We mame IT Work
+                            !</h1>
                     </div>
                     <div class="row">
                         <div class="col-xl-3 col-md-6 mb-4">
@@ -377,16 +395,18 @@
                             </div>
                         </div>
                         <div class="col-lg-6">
-                                <div class="card shadow mb-4">
-                                    <a href="#collapseCardExample3" class="d-block card-header py-3" data-toggle="collapse"
-                                        role="button" aria-expanded="true" aria-controls="collapseCardExample3">
-                                        <h6 class="m-0 font-weight-bold text-danger"><i
-                                                class="fas fa-tools"></i>&nbsp;&nbsp;SOP3 Connection String</h6>
-                                    </a>
-                                    <div class="collapse" id="collapseCardExample3">
-                                        <div class="card-body">
-                                            <div class="col-lg-12 mb-4">
-                                                <textarea class="form-control" style="white-space:pre;overflow-wrap: normal;overflow-x: scroll;" readonly onclick="Copy(this)" cols="50" rows="16">
+                            <div class="card shadow mb-4">
+                                <a href="#collapseCardExample3" class="d-block card-header py-3" data-toggle="collapse"
+                                    role="button" aria-expanded="true" aria-controls="collapseCardExample3">
+                                    <h6 class="m-0 font-weight-bold text-danger"><i
+                                            class="fas fa-tools"></i>&nbsp;&nbsp;SOP3 Connection String</h6>
+                                </a>
+                                <div class="collapse" id="collapseCardExample3">
+                                    <div class="card-body">
+                                        <div class="col-lg-12 mb-4">
+                                            <textarea class="form-control"
+                                                style="white-space:pre;overflow-wrap: normal;overflow-x: scroll;"
+                                                readonly onclick="Copy(this)" cols="50" rows="16">
 <add name="ElmahConnectionString" connectionString="Data Source=m2-dev-db01;Initial Catalog=ELMAH; Integrated Security=True;" providerName="System.Data.SqlClient" />
 <add name="M2ServiceConnectionString" connectionString="Data Source=m2-dev-db01\tesseract;Initial Catalog=M2Service;Integrated Security=True" providerName="System.Data.SqlClient" />
 <add name="DWConnectionString" connectionString="Data Source=m2-dev-db01;Initial Catalog=M2Digital_DW;Integrated Security=True" providerName="System.Data.SqlClient" />
@@ -403,10 +423,10 @@
 <add name="SalesDealEntities" connectionString="metadata=res://*/M2Service.Salesforce.csdl|res://*/M2Service.Salesforce.ssdl|res://*/M2Service.Salesforce.msl;provider=System.Data.SqlClient;provider connection string="data source=m2-dev-db01\tesseract;initial catalog=M2Service;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework"" providerName="System.Data.EntityClient" />
 <add name="PricingEntities" connectionString="metadata=res://*/Pricing.PricingEF.csdl|res://*/Pricing.PricingEF.ssdl|res://*/Pricing.PricingEF.msl;provider=System.Data.SqlClient;provider connection string="data source=m2-dev-db01\tesseract;initial catalog=PricingV2;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework"" providerName="System.Data.EntityClient" />
                                                 </textarea>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
                         </div>
                     </div>
                     <div class="toast">
@@ -462,4 +482,5 @@
         }
     </script>
 </body>
+
 </html>

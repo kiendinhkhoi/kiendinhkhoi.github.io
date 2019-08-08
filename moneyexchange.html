@@ -23,7 +23,7 @@
                 <div class="sidebar-brand-text mx-3">iControl</div>
             </a>
             <hr class="sidebar-divider my-0">
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Trang chính</span></a>
@@ -37,7 +37,7 @@
                     <i class="fas fa-music"></i>
                     <span>Nghe nhạc</span></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="moneyexchange.html">
                     <i class="fas fa-funnel-dollar"></i>
                     <span>Chuyển đổi ngoại tệ</span></a>
@@ -249,11 +249,34 @@
                     </ul>
                 </nav>
                 <div class="container-fluid">
-                    <div class="text-center">
-                        <div class="error mx-auto" data-text="404">404</div>
-                        <p class="lead text-gray-800 mb-5">Không tìm thấy trang</p>
-                        <p class="text-gray-500 mb-0">Kiểm tra lại đường dẫn và thử lại...</p>
-                        <a href="index.html">← Trở về trang chính</a>
+                    <div class="row">
+                        <div class="col-lg-3 mb-4">
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary"><i class="fas fa-funnel-dollar"></i>
+                                        Chuyển đổi ngoại tệ</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="text-left">
+                                        <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 20rem;"
+                                            src="img/undraw_posting_photo.svg" alt="">
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-md-12">
+                                            <input type="number" class="form-control"
+                                                data-bind="value: DolaMy, valueUpdate: 'afterkeydown'"
+                                                placeholder="Đô-la Mỹ (USD)">
+                                        </div>
+                                        <i class="fas fa-equals fa-2x mt-1 ml-3 mb-1"></i>
+                                        <div class="col-md-12">
+                                            <input type="number" class="form-control"
+                                                data-bind="value: USDtoVND, valueUpdate: 'afterkeydown'"
+                                                placeholder="Việt Nam đồng (VND)" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -291,9 +314,22 @@
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="js/sb-admin-2.min.js"></script>
-    <script src="vendor/chart.js/Chart.min.js"></script>
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
+    <script src=js/knockout-3.5.0.js> </script> <script>
+        function IndexViewModel() {
+            self.VietNamDong = ko.observable();
+            self.DolaMy = ko.observable();
+
+            self.USDtoVND = ko.computed(function () {
+                return parseFloat(self.DolaMy()) * parseFloat(23255);
+            });
+
+            self.VNDtoUSD = ko.computed(function () {
+                return (parseFloat(self.VietNamDong()) / parseFloat(23255)).toFixed(2);
+            });
+        }
+
+        ko.applyBindings(new IndexViewModel());
+    </script>
 </body>
 
 </html>

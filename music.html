@@ -2,37 +2,58 @@
 <html lang="en">
 
 <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+
     <title>iControl</title>
+
+    <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/music.css" rel="stylesheet">
+
 </head>
 
 <body id="page-top">
+
+    <!-- Page Wrapper -->
     <div id="wrapper">
+
+        <!-- Sidebar -->
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
                 <div class="sidebar-brand-text mx-3">iControl</div>
             </a>
+
+            <!-- Divider -->
             <hr class="sidebar-divider my-0">
-            <li class="nav-item active">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
                 <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Trang chính</span></a>
             </li>
+
+            <!-- Divider -->
             <hr class="sidebar-divider">
+
+            <!-- Heading -->
             <div class="sidebar-heading">
                 Cuộc sống
             </div>
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="music.html">
                     <i class="fas fa-music"></i>
                     <span>Nghe nhạc</span></a>
@@ -42,15 +63,22 @@
                     <i class="fas fa-funnel-dollar"></i>
                     <span>Chuyển đổi ngoại tệ</span></a>
             </li>
+            <!-- Nav Item - Charts -->
             <li class="nav-item">
                 <a class="nav-link" href="calculator.html">
                     <i class="fas fa-fw fa-calculator"></i>
                     <span>Tính tiền về Huế</span></a>
             </li>
+
+            <!-- Divider -->
             <hr class="sidebar-divider">
+
+            <!-- Heading -->
             <div class="sidebar-heading">
                 Công việc
             </div>
+
+            <!-- Nav Item - Tables -->
             <li class="nav-item">
                 <a class="nav-link" href="tables.html">
                     <i class="fas fa-fw fa-code"></i>
@@ -66,17 +94,33 @@
                     <i class="far fa-building"></i>
                     <span>SCC Vietnam</span></a>
             </li>
+
+            <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
+
         </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
             <div id="content">
+
+                <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                         <i class="fa fa-bars"></i>
                     </button>
+
+                    <!-- Topbar Search -->
                     <form
                         class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
@@ -89,12 +133,17 @@
                             </div>
                         </div>
                     </form>
+
+                    <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
                         <li class="nav-item dropdown no-arrow d-sm-none">
                             <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-search fa-fw"></i>
                             </a>
+                            <!-- Dropdown - Messages -->
                             <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
                                 aria-labelledby="searchDropdown">
                                 <form class="form-inline mr-auto w-100 navbar-search">
@@ -111,12 +160,16 @@
                                 </form>
                             </div>
                         </li>
+
+                        <!-- Nav Item - Alerts -->
                         <li class="nav-item dropdown no-arrow mx-1">
                             <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-bell fa-fw"></i>
+                                <!-- Counter - Alerts -->
                                 <span class="badge badge-danger badge-counter">3+</span>
                             </a>
+                            <!-- Dropdown - Alerts -->
                             <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="alertsDropdown">
                                 <h6 class="dropdown-header">
@@ -158,12 +211,16 @@
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
                             </div>
                         </li>
+
+                        <!-- Nav Item - Messages -->
                         <li class="nav-item dropdown no-arrow mx-1">
                             <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-envelope fa-fw"></i>
+                                <!-- Counter - Messages -->
                                 <span class="badge badge-danger badge-counter">7</span>
                             </a>
+                            <!-- Dropdown - Messages -->
                             <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="messagesDropdown">
                                 <h6 class="dropdown-header">
@@ -221,7 +278,10 @@
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
                             </div>
                         </li>
+
                         <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -229,6 +289,7 @@
                                 <img class="img-profile rounded-circle"
                                     src="https://lh3.google.com/u/0/d/1v1-FiKo3ESSqc8rI205D4Sds_G6DqWCy=w1920-h937-iv1">
                             </a>
+                            <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="#">
@@ -246,17 +307,32 @@
                                 </a>
                             </div>
                         </li>
+
                     </ul>
+
                 </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
                 <div class="container-fluid">
-                    <div class="text-center">
-                        <div class="error mx-auto" data-text="404">404</div>
-                        <p class="lead text-gray-800 mb-5">Không tìm thấy trang</p>
-                        <p class="text-gray-500 mb-0">Kiểm tra lại đường dẫn và thử lại...</p>
-                        <a href="index.html">← Trở về trang chính</a>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card shadow">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Nghe nhạc</h6>
+                                </div>
+                                <div class="card-body">
+                                    <embed src="musicholder.html" height="600px" width="100%"></embed>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
@@ -264,11 +340,20 @@
                     </div>
                 </div>
             </footer>
+            <!-- End of Footer -->
+
         </div>
+        <!-- End of Content Wrapper -->
+
     </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
+
+    <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -287,13 +372,233 @@
             </div>
         </div>
     </div>
+
+    <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
-    <script src="vendor/chart.js/Chart.min.js"></script>
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
+
+    <script>
+        $(function () {
+            var playerTrack = $("#player-track"), bgArtwork = $('#bg-artwork'), bgArtworkUrl, albumName = $('#album-name'), trackName = $('#track-name'), albumArt = $('#album-art'), sArea = $('#s-area'), seekBar = $('#seek-bar'), trackTime = $('#track-time'), insTime = $('#ins-time'), sHover = $('#s-hover'), playPauseButton = $("#play-pause-button"), i = playPauseButton.find('i'), tProgress = $('#current-time'), tTime = $('#track-length'), seekT, seekLoc, seekBarPos, cM, ctMinutes, ctSeconds, curMinutes, curSeconds, durMinutes, durSeconds, playProgress, bTime, nTime = 0, buffInterval = null, tFlag = false, albums = ['Dawn', 'Me & You', 'Electro Boy', 'Home', 'Proxy (Original Mix)'], trackNames = ['Skylike - Dawn', 'Alex Skrindo - Me & You', 'Kaaze - Electro Boy', 'Jordan Schor - Home', 'Martin Garrix - Proxy'], albumArtworks = ['_1', '_2', '_3', '_4', '_5'], trackUrl = ['https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/2.mp3', 'https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/1.mp3', 'https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/3.mp3', 'https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/4.mp3', 'https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/5.mp3'], playPreviousTrackButton = $('#play-previous'), playNextTrackButton = $('#play-next'), currIndex = -1;
+
+            function playPause() {
+                setTimeout(function () {
+                    if (audio.paused) {
+                        playerTrack.addClass('active');
+                        albumArt.addClass('active');
+                        checkBuffering();
+                        i.attr('class', 'fas fa-pause');
+                        audio.play();
+                    }
+                    else {
+                        playerTrack.removeClass('active');
+                        albumArt.removeClass('active');
+                        clearInterval(buffInterval);
+                        albumArt.removeClass('buffering');
+                        i.attr('class', 'fas fa-play');
+                        audio.pause();
+                    }
+                }, 300);
+            }
+
+
+            function showHover(event) {
+                seekBarPos = sArea.offset();
+                seekT = event.clientX - seekBarPos.left;
+                seekLoc = audio.duration * (seekT / sArea.outerWidth());
+
+                sHover.width(seekT);
+
+                cM = seekLoc / 60;
+
+                ctMinutes = Math.floor(cM);
+                ctSeconds = Math.floor(seekLoc - ctMinutes * 60);
+
+                if ((ctMinutes < 0) || (ctSeconds < 0))
+                    return;
+
+                if ((ctMinutes < 0) || (ctSeconds < 0))
+                    return;
+
+                if (ctMinutes < 10)
+                    ctMinutes = '0' + ctMinutes;
+                if (ctSeconds < 10)
+                    ctSeconds = '0' + ctSeconds;
+
+                if (isNaN(ctMinutes) || isNaN(ctSeconds))
+                    insTime.text('--:--');
+                else
+                    insTime.text(ctMinutes + ':' + ctSeconds);
+
+                insTime.css({ 'left': seekT, 'margin-left': '-21px' }).fadeIn(0);
+
+            }
+
+            function hideHover() {
+                sHover.width(0);
+                insTime.text('00:00').css({ 'left': '0px', 'margin-left': '0px' }).fadeOut(0);
+            }
+
+            function playFromClickedPos() {
+                audio.currentTime = seekLoc;
+                seekBar.width(seekT);
+                hideHover();
+            }
+
+            function updateCurrTime() {
+                nTime = new Date();
+                nTime = nTime.getTime();
+
+                if (!tFlag) {
+                    tFlag = true;
+                    trackTime.addClass('active');
+                }
+
+                curMinutes = Math.floor(audio.currentTime / 60);
+                curSeconds = Math.floor(audio.currentTime - curMinutes * 60);
+
+                durMinutes = Math.floor(audio.duration / 60);
+                durSeconds = Math.floor(audio.duration - durMinutes * 60);
+
+                playProgress = (audio.currentTime / audio.duration) * 100;
+
+                if (curMinutes < 10)
+                    curMinutes = '0' + curMinutes;
+                if (curSeconds < 10)
+                    curSeconds = '0' + curSeconds;
+
+                if (durMinutes < 10)
+                    durMinutes = '0' + durMinutes;
+                if (durSeconds < 10)
+                    durSeconds = '0' + durSeconds;
+
+                if (isNaN(curMinutes) || isNaN(curSeconds))
+                    tProgress.text('00:00');
+                else
+                    tProgress.text(curMinutes + ':' + curSeconds);
+
+                if (isNaN(durMinutes) || isNaN(durSeconds))
+                    tTime.text('00:00');
+                else
+                    tTime.text(durMinutes + ':' + durSeconds);
+
+                if (isNaN(curMinutes) || isNaN(curSeconds) || isNaN(durMinutes) || isNaN(durSeconds))
+                    trackTime.removeClass('active');
+                else
+                    trackTime.addClass('active');
+
+
+                seekBar.width(playProgress + '%');
+
+                if (playProgress == 100) {
+                    i.attr('class', 'fa fa-play');
+                    seekBar.width(0);
+                    tProgress.text('00:00');
+                    albumArt.removeClass('buffering').removeClass('active');
+                    clearInterval(buffInterval);
+                }
+            }
+
+            function checkBuffering() {
+                clearInterval(buffInterval);
+                buffInterval = setInterval(function () {
+                    if ((nTime == 0) || (bTime - nTime) > 1000)
+                        albumArt.addClass('buffering');
+                    else
+                        albumArt.removeClass('buffering');
+
+                    bTime = new Date();
+                    bTime = bTime.getTime();
+
+                }, 100);
+            }
+
+            function selectTrack(flag) {
+                if (flag == 0 || flag == 1)
+                    ++currIndex;
+                else
+                    --currIndex;
+
+                if ((currIndex > -1) && (currIndex < albumArtworks.length)) {
+                    if (flag == 0)
+                        i.attr('class', 'fa fa-play');
+                    else {
+                        albumArt.removeClass('buffering');
+                        i.attr('class', 'fa fa-pause');
+                    }
+
+                    seekBar.width(0);
+                    trackTime.removeClass('active');
+                    tProgress.text('00:00');
+                    tTime.text('00:00');
+
+                    currAlbum = albums[currIndex];
+                    currTrackName = trackNames[currIndex];
+                    currArtwork = albumArtworks[currIndex];
+
+                    audio.src = trackUrl[currIndex];
+
+                    nTime = 0;
+                    bTime = new Date();
+                    bTime = bTime.getTime();
+
+                    if (flag != 0) {
+                        audio.play();
+                        playerTrack.addClass('active');
+                        albumArt.addClass('active');
+
+                        clearInterval(buffInterval);
+                        checkBuffering();
+                    }
+
+                    albumName.text(currAlbum);
+                    trackName.text(currTrackName);
+                    albumArt.find('img.active').removeClass('active');
+                    $('#' + currArtwork).addClass('active');
+
+                    bgArtworkUrl = $('#' + currArtwork).attr('src');
+
+                    bgArtwork.css({ 'background-image': 'url(' + bgArtworkUrl + ')' });
+                }
+                else {
+                    if (flag == 0 || flag == 1)
+                        --currIndex;
+                    else
+                        ++currIndex;
+                }
+            }
+
+            function initPlayer() {
+                audio = new Audio();
+
+                selectTrack(0);
+
+                audio.loop = false;
+
+                playPauseButton.on('click', playPause);
+
+                sArea.mousemove(function (event) { showHover(event); });
+
+                sArea.mouseout(hideHover);
+
+                sArea.on('click', playFromClickedPos);
+
+                $(audio).on('timeupdate', updateCurrTime);
+
+                playPreviousTrackButton.on('click', function () { selectTrack(-1); });
+                playNextTrackButton.on('click', function () { selectTrack(1); });
+            }
+
+            initPlayer();
+        });
+    </script>
+
 </body>
 
 </html>
