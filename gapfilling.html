@@ -1,0 +1,164 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.6">
+    <title>Main page</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/blog/">
+    <link href="src/bootstrap.css" rel="stylesheet">
+    <link href="src/bootstrap.min.css" rel="stylesheet">
+    <style>
+        label {
+            margin-right: 110px;
+        }
+
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <link href="src/css.css" rel="stylesheet">
+    <link href="src/blog.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header class="blog-header py-3">
+            <div class="row flex-nowrap justify-content-between align-items-center">
+                <div class="col-4 pt-1">
+                </div>
+                <div class="col-4 text-center">
+                    <a class="blog-header-logo text-dark" href="main.html">PP5</a>
+                </div>
+                <div class="col-4 d-flex justify-content-end align-items-center">
+                </div>
+            </div>
+        </header>
+        <main role="main" class="container" style="margin-top:40px">
+            <div class="row">
+                <div class="col-md-7 blog-main">
+                    <div class="blog-post">
+                        <h2 class="blog-post-title">Gap-filiing</h2>
+                        <p class="blog-post-meta">Reading for details</p>
+
+                        <p>Complete the following sentences with no more than two words from the passage.</p>
+                        <p></p>
+                        <hr>
+                        <h3>Passage</h3>
+                        <div class="form-inline">
+                            <p>
+                                We know about carbon dioxide and its impact on global warming, but we don't know much about one <input type="text" id="a1" class="form-control" style="width:180px" />, called soot.
+                            </p>
+                            <p>
+                                Soot comes from the <input type="text" id="a2" class="form-control" style="width:120px" /> burning of coal, oil, wood, and other fuels.
+                            </p>
+                            <p>
+                                After carbon dioxide, black carbon is the second most detrimental <input type="text" id="a3" class="form-control" style="width:140px" />.
+                            </p>
+                            <p>
+                                Soot particles can be <input type="text" id="a4" class="form-control" style="width:70px" /> breathed in because they are very tiny.
+                            </p>
+                            <p>
+                                People can reduce black carbon emissions at home by using <input type="text" id="a5" class="form-control" style="width:110px" /> fuel stoves for cooking and heating.
+                            </p>
+                        </div>
+                        <br />
+                    </div><!-- /.blog-post -->
+
+                    <nav class="blog-pagination">
+                        <a class="btn btn-outline-primary" href="main.html">← Back to home</a>
+                    </nav>
+
+                </div><!-- /.blog-main -->
+
+                <aside class="col-md-5 blog-sidebar">
+                    <div class="p-4 mb-4 bg-light rounded">
+                        <center>
+                            <button class="btn btn-lg btn-success" onclick="Calculate()">Submit answer</button>
+                            <h4 id="test_result" style="margin-top:20px" class="text-danger"></h4>
+                            <hr />
+                            <table id="answer_table" class="table table-bordered" style="display: none;">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th width="200px">#</th>
+                                        <th>Answer</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>1</td>
+                                    <td>dangerous pollutant</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>incomplete</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>greenhouse gas</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>easily</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>clean, alternative</td>
+                                </tr>
+                            </table>
+                        </center>
+                    </div>
+                </aside><!-- /.blog-sidebar -->
+
+            </div><!-- /.row -->
+
+        </main>
+    </div>
+    <script src="src/jquery-3.4.1.min.js"></script>
+    <script>
+        function Calculate() {
+            var result = 0;
+
+            // Copy this ↓
+            var inputA1 = $("#a1").val().toLowerCase().trim();
+            var inputA2 = $("#a2").val().toLowerCase().trim();
+            var inputA3 = $("#a3").val().toLowerCase().trim();
+            var inputA4 = $("#a4").val().toLowerCase().trim();
+            var inputA5 = $("#a5").val().toLowerCase().trim();
+            if (inputA1 == "dangerous pollutant") {
+                result++;
+            }
+            if (inputA2 == "incomplete") {
+                result++;
+            }
+            if (inputA3 == "greenhouse gas") {
+                result++;
+            }
+            if (inputA4 == "easily") {
+                result++;
+            }
+            if (inputA5 == "alternative" || inputA5 == "clean") {
+                result++;
+            }
+
+            // Show result ↓
+            $("#test_result").html("Your score: " + result);
+            $("#answer_table").show();
+        }
+    </script>
+</body>
+
+</html>
