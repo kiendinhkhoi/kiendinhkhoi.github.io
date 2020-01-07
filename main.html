@@ -26,12 +26,72 @@
                 font-size: 3.5rem;
             }
         }
+
+        .corner-ribbon {
+            width: 200px;
+            background: #4885ED;
+            position: absolute;
+            top: 25px;
+            left: -50px;
+            text-align: center;
+            line-height: 50px;
+            letter-spacing: 1px;
+            color: #f0f0f0;
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+        }
+
+            /* Custom styles */
+
+            .corner-ribbon.sticky {
+                position: fixed;
+            }
+
+            .corner-ribbon.shadow {
+                box-shadow: 0 0 3px rgba(0,0,0,.3);
+            }
+
+            /* Different positions */
+
+            .corner-ribbon.top-left {
+                top: 25px;
+                left: -50px;
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+            }
+
+            .corner-ribbon.top-right {
+                top: 25px;
+                right: -50px;
+                left: auto;
+                transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+            }
+
+            .corner-ribbon.bottom-left {
+                top: auto;
+                bottom: 25px;
+                left: -50px;
+                transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+            }
+
+            .corner-ribbon.bottom-right {
+                top: auto;
+                right: -50px;
+                bottom: 25px;
+                left: auto;
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+            }
     </style>
     <link href="src/css.css" rel="stylesheet">
     <link href="src/blog.css" rel="stylesheet">
 </head>
 
 <body>
+    <div class="corner-ribbon top-left shadow">HUFL</div>
+    <div class="corner-ribbon bottom-right shadow">HUFL</div>
     <div class="container">
         <header class="blog-header py-3">
             <div class="row flex-nowrap justify-content-between align-items-center">
@@ -56,19 +116,20 @@
                     </thead>
                     <tr>
                         <td>Reading for main idea</td>
-                        <td><a href="heading.html" class="btn btn-primary">Heading</a></td>
+                        <td><a href="heading.html" class="btn btn-primary">1. Heading</a></td>
                     </tr>
                     <tr>
                         <td rowspan="3">Reading for details</td>
-                        <td><a href="gapfilling.html" class="btn btn-primary">Gap-filling</a></td>
+                        <td><a href="gapfilling.html" class="btn btn-primary">2. Gap-filling</a></td>
                     </tr>
                     <tr>
-                        <td><a href="multiplechoice.html" class="btn btn-primary">Multiple choice</a></td>
+                        <td><a href="multiplechoice.html" class="btn btn-primary">3. Multiple choice</a></td>
                     </tr>
                     <tr>
-                        <td><a href="truefalse.html" class="btn btn-primary">True False</a></td>
+                        <td><a href="truefalse.html" class="btn btn-primary">4. True False</a></td>
                     </tr>
                 </table>
+                <center class="text-danger">Please complete and submit all given exercises</center>
             </div>
         </div>
         <nav class="blog-pagination">
